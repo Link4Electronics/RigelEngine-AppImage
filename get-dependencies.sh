@@ -40,8 +40,7 @@ mkdir -p build && cd build
 cmake .. \
 	-DCMAKE_BUILD_TYPE=Release \
 	-DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
-	-DBUILD_TESTS=OFF \
-	-Wno-dev
+	-DBUILD_TESTS=OFF
 make -j$(nproc)
 
 mv -v src/RigelEngine ../../AppDir/bin
